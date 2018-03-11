@@ -1,6 +1,2 @@
-body{
-  margin: 10px;
-  background: #fff;
-}
-
-@import "common/menu.scss";
+@import "./block/menu";
+@import "./block/log-in";
