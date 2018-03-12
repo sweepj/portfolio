@@ -6,9 +6,16 @@ block variables
 block content
   div.log-in
     h1.log-in__title Авторизация
-    form
-      label.log-in__email-text(for="email" ) email
-      input.log-in__email-input(name="email" id="email")
-      label.log-in__password-text(for="password") password
-      input.log-in__password-input(name="password" id="password")
-      button.log-in__btn Войти
+    form.log-in__form
+      .log-in__login
+        //label.log-in__email-title(for="login" ) Логин
+        input.log-in__email-input(name="login" id="login" placeholder="Логин")
+      .log-in__password
+        //label.log-in__password-title(for="password") password
+        input.log-in__password-input(name="password" id="password" placeholder="Пароль")
+      .log-in__capcha
+        input.log-in__capcha-input(type="checkbox" name="capcha" id="capcha")
+        label.log-in__capcha-title(for="capcha") Я человек
+      .log-in__btn
+        button.log-in__btn-main На главную
+        button.log-in__btn-come Войти

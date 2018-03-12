@@ -2,4 +2,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background: darkgray;
+  width: 380px;
+  opacity: .8;
 }
+.log-in__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.log-in__btn-main, .log-in__btn-come{
+  cursor:pointer;
+  border-style: none;
+  background: #07ac99;
+  opacity: .8;
+  &:hover{
+    background-color: darken(#07ac99,5%);
+  }
+}
+
