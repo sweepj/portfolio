@@ -1,0 +1,12 @@
+mixin social(className, width, height, links, classActive)
+  ul(class=`${className}`)
+    each link, index in links
+      li(class=`${className}__item`)
+        svg(class=`${className}__icon ` + ( (ndx === classActive) ? `${className}__icon_active` : '') width=`${width}` height=`${height}`)
+          use(xlink:href=`${link}`)
+
+mixin list(className, contents, classActive)
+  ul(class=`${className}__item`)
+    each content, index in contents
+      li(class=`${className}__list` + ( (index === classActive) ? `${className}__list-active` : ''))
+        div(class=`${className}__content`)= content

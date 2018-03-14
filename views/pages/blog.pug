@@ -1,4 +1,15 @@
 extends ../template
 
 block content
-    h1.blog__title Блог
+  .maincontent
+    header.header
+      include ../common/header
+    .article
+      .container
+        
+        include ../common/sidebar
+
+        .content
+
+        include ../common/blog-content
+        
