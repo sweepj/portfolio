@@ -1,11 +1,18 @@
-header.header
-  .container
-    .header-bg
-    .header__left
-      +social("social", 55, 45, ["images/icons/sprite.svg#vk", "images/icons/sprite.svg#github", "images/icons/sprite.svg#in"], 2)
-    .header__right
-      .header__btn
-        a(href="#" class="header-menu")
-          .header-menu__bars
-
-
+section.section.hero
+  .container__hero
+    .hero__social
+        +social("social", 34, 18, ["vk", "github", "in"], 2)
+    .hero-title
+      .section-title
+        img(src="../images/content/blog_header.png", alt="background" class="section-hero__img")
+    .user.hero__user
+      .user__picture
+        img(class="user__picture-img" scr="../images/content/user.jpg")
+      .user__description
+        .user__page Блог
+        .user__data Статьи, которые я написал
+    .hero__menu
+      .hamburger-menu
+        a(href="#" class="hamburger-menu__link")
+          svg(class="hamburger-menu__icon" width="33" height="33")
+            use(xlink:href="images/icons/sprite.svg#hamburger")  
