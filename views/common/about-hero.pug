@@ -1,0 +1,22 @@
+section.section.hero
+  .container__hero
+    .hero__social
+        +social("social", 34, 18, ["vk", "github", "in"], 2)
+    .hero-title
+      .section-title
+        svg(class="section-title__icon" width)
+    .user.hero__user
+      .user__picture(style="background: url(../images/content/user.jpg)")
+        img(class="user__picture-img" src="../images/content/user.jpg")
+      .user__description
+        .user__name Владимир Астахов
+        .user__data Личный сайт веб разработчика
+    .hero__menu
+      .hamburger-menu
+        a(href="#" class="hamburger-menu__link")
+          svg(class="hamburger-menu__icon" width="33" height="33")
+            use(xlink:href="images/icons/sprite.svg#hamburger")
+    .arrow-down.hero__scroll-btn
+      a(href="#" class="hero__scroll-link")
+        svg(class="hero__scroll-icon" width="26" height="16")
+          use(xlink:href="images/icons/sprite.svg#arrow_down")  

@@ -30,6 +30,12 @@ ul{
   width: 100%;
 }
 
+.maincontainer{
+  min-height: 100%;
+  height:auto!important;
+  overflow:hidden;
+}
+
 .container{
   display:flex;
   flex-direction: row;

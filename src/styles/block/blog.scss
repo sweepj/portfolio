@@ -1,0 +1,141 @@
+.hero{
+  position: relative;
+  background-image: url('../images/bg/hero-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 396px;
+}
+
+
+.hero-title{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.container__hero{
+  padding: 28px 30px;
+  margin: 0 auto;
+  max-width: 1180px;
+  display:flex;
+  justify-content: space-between;
+  align-items:stretch;
+}
+
+.user__description{
+  color: #fff;
+  text-align: center;
+}
+
+.user__picture{
+  display: flex;
+  text-align:center;
+  overflow: hidden;
+  width: 147px;
+  height: 142px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.social__item{
+  display: inline-block;
+}
+
+.social__icon{
+  fill: white;
+  opacity: .5;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.hamburger-menu__icon{
+  fill: white;
+}
+
+.hero__user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.sidebar{
+  display:flex;
+  flex: 1;
+  justify-content: center;
+  margin-left: 45px;
+}
+
+.sidebar__list{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+  width: 256px;
+  height: 42px;
+  padding-right: 18px;
+  margin-bottom: 28px;
+  &:hover{
+    border-right: solid 3px #009688;
+    .sidebar__content{
+      color: #009688;
+    }
+  }
+}
+
+.sidebar__list-active{
+  border-right: solid 3px #009688;
+  .sidebar__content{
+    color: #009688;
+  }
+}
+
+.sidebar__content{
+  color: #000;
+}
+
+.blog{
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 680px;
+}
+
+.content{
+  display:flex;
+}
+
+.section__date-publication{
+  color: #00bfa5;
+}
+
+.section__title, .section__date-publication{
+  margin-bottom: 30px;
+}
+
+.section__list{
+  border-top: solid 5px #f1f1f3;
+  .section__title{
+    padding-top: 70px;
+  }
+  &:first-child{
+    border: none;
+    .section__title{
+      padding: 0;
+    }
+  }
+}
+
+
+.section__text{
+  margin-bottom: 70px;
+}

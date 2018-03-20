@@ -3,16 +3,12 @@ extends ../template
 block content
   .maincontent
     header.header
-      include ../common/header
+      include ../common/blog/blog-header
     .article
     
-      .container    
-        include ../common/sidebar
+      .content   
+        include ../common/blog/blog-sidebar
       
-        .content
-
-          include ../common/blog-content
-  
-  .footer
-    include ../common/footer
+        include ../common/blog/blog-content
+  include ../common/footer
 

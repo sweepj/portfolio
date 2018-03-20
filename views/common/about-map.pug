@@ -1,0 +1,20 @@
+section.section.map
+  .google-map
+  .map-contacts
+    .contacts
+      .contacts__title
+        .block-subtitle Контакты
+      ul.contacts__list 
+        -
+          var contacts = [
+            ['skype', 'skype_kdn'],
+            ['mail', 'astahov@gmail.com'],
+            ['phone', '+79211 123 90'],
+            ['mark', 'Новосибирск'],
+          ]
+
+      each contact in contacts
+        li.contact__item
+          .contacts__row
+            .contacts__icon #{contact[0]}
+            .contacts__text #{contact[1]}

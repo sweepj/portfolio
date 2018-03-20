@@ -1,0 +1,69 @@
+.about{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: -8.5%;
+  height: 100%;
+}
+
+.triangle-left .left{
+  fill:  #efeee9;
+}
+
+.triangle-right .right{
+  fill: #eeebdf;
+}
+
+.about__left, .about__right{
+  display: block;
+  width: 50%;
+}
+
+.left-desc{
+  height: 100%;
+  background-color:  #efeee9;
+}
+
+.right-desc{
+  height: 100%;
+  background-color:  #eeebdf;
+}
+
+.triangle-right, .triangle-left{
+  display: block;
+}
+
+
+.skill{
+  width: 100px;
+}
+
+.user-description__avatar{
+  height: 390px;
+  width: 444px;
+}
+
+.skills-row__list{
+  display:flex;
+  flex-direction: row;
+}
+
+.map{
+  position: relative;
+}
+
+.google-map{
+  background: url('../images/content/map.jpg');
+  background-position: center, center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+}
+
+
+.map-contacts{
+  top:10%;
+  left: 50%;
+  position:absolute;
+}
