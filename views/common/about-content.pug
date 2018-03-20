@@ -2,7 +2,7 @@
   var work = [
     {
       title: "Frontend",
-      skills: ["HTML5", "CSS3", "JavaScript & jQuery"],
+      skills: ["HTML5", "CSS3", "JavaScript & jQuery"]
     },
     {
       title: "Backend",
@@ -40,6 +40,6 @@ section.section.about
         p Больше всего меня привекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
       .about__right-content
         each skill in work
-          +mixin_skill('skills', 'skill', 20, 20, skill)
+          +mixin_skill('skills', 'skill', skill)
           
     

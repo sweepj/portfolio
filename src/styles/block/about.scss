@@ -1,9 +1,7 @@
 .about{
-  position: relative;
   display: flex;
   flex-direction: row;
   margin-top: -8.5%;
-  height: 100%;
 }
 
 .triangle-left .left{
@@ -15,27 +13,32 @@
 }
 
 .about__left, .about__right{
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 50%;
 }
 
 .left-desc{
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color:  #efeee9;
 }
 
 .right-desc{
+  display: flex;
   height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color:  #eeebdf;
 }
 
 .triangle-right, .triangle-left{
+  position: relative;
   display: block;
-}
-
-
-.skill{
-  width: 100px;
 }
 
 .user-description__avatar{
@@ -43,27 +46,37 @@
   width: 444px;
 }
 
-.skills-row__list{
+.about__left-content{
   display:flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 73%;
 }
+
+.about__right-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 10%;
+}
+
+.about__right-text{
+  margin-left: 5%;
+}
+
 
 .map{
-  position: relative;
-}
-
-.google-map{
   background: url('../images/content/map.jpg');
   background-position: center, center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
-  position: relative;
 }
 
 
 .map-contacts{
-  top:10%;
+  display: inline-block;
+  top: 50%;
   left: 50%;
   position:absolute;
+  transform: translate(-50%, -50%);
 }
