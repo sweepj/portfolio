@@ -15,7 +15,6 @@
 .skills-row__list{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .skill__circle-first{
@@ -26,6 +25,13 @@
   stroke: #16c2aa;
   stroke-dasharray: .0010 282.6;
   transition: all 1s;
+}
+
+.skill__title{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .skill__circle:hover .circle-HTML5 {

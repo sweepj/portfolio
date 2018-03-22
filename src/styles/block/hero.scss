@@ -48,6 +48,17 @@
   margin: 0;
 }
 
+.hero__scroll-btn{
+  fill: #fff;
+  opacity:(.8);
+  z-index: 10;
+  transition: .4s;
+
+  &:hover{
+    opacity:(1);
+  }
+}
+
 .social__item{
   display: inline-block;
 }

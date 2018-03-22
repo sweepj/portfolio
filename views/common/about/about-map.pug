@@ -1,9 +1,9 @@
 -
   var contacts = [
     ['skype', 'skype_kdn'],
-    ['mail', 'astahov@gmail.com'],
-    ['phone', '+79211 123 90'],
-    ['mark', 'Новосибирск'],
+    ['envelope', 'astahov@gmail.com'],
+    ['phone', '+7 978 123 90 09'],
+    ['map_marker', 'Новосибирск'],
   ]
 section.section.map
   .google-map
@@ -15,5 +15,7 @@ section.section.map
         each contact in contacts
           li.contact__item
             .contacts__row
-              .contacts__icon #{contact[0]}
+              .contacts__img
+                svg(class="contacts__icon" width="25" height="25")
+                  use(xlink:href=`images/icons/sprite.svg#${contact[0]}`)
               .contacts__text #{contact[1]}

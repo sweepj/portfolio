@@ -21,7 +21,7 @@
 .left-desc{
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color:  #efeee9;
@@ -30,7 +30,7 @@
 .right-desc{
   display: flex;
   height: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color:  #eeebdf;
@@ -50,8 +50,9 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  width: 73%;
+  width: 430px;
 }
+
 
 .about__right-content{
   display: flex;
@@ -74,9 +75,44 @@
 
 
 .map-contacts{
+  background-color: rgba(#fff, .85);
+  width: 382px;
+  height: 292px;
   display: inline-block;
   top: 50%;
   left: 50%;
   position:absolute;
+  border-radius: 3px;
   transform: translate(-50%, -50%);
+}
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.contacts__list{
+  margin-top: 40px;
+}
+
+.contacts__icon{
+  fill: #00bea4;
+}
+
+.contacts__row{
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts__img{
+  margin-right: 10px;
+}
+
+.user-description{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
