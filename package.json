@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "scripts": { 
+  "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cheerio": "^0.6.3",
     "gulp-cli": "^2.0.1",
+    "gulp-jquery": "^1.1.2",
     "gulp-load-plugins": "^1.5.0",
     "gulp-nodemon": "^2.2.1",
     "gulp-plumber": "^1.2.0",
@@ -34,6 +35,7 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-wait": "0.0.2",
     "gulp-webpack": "^1.5.0",
+    "jQuery": "^1.7.4",
     "sass-module-importer": "^1.4.0",
     "webpack": "^4.0.1"
   },

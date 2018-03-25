@@ -9,6 +9,7 @@ const webpack = require("webpack");
 const webpackConfig = require("./webpack.config.js");
 const moduleImporter = require("sass-module-importer");
 const del = require("del");
+const jquery = require("jquery")
 
 const SRC_DIR = "src";
 const DIST_DIR = "public";
@@ -144,6 +145,7 @@ gulp.task("images", () => {
     .pipe(gulp.dest(`${DIST_DIR}/images/`));
 });
 
+
 // галповский вотчер
 gulp.task("watch", () => {
   gulp.watch(`${SRC_DIR}/styles/**/*.scss`, gulp.series("styles"));
@@ -159,6 +161,6 @@ gulp.task(
   gulp.series(
     "clean",
     gulp.parallel("styles", "images", "fonts", "scripts", "svg"),
-    gulp.parallel("watch", "server")
+    gulp.parallel("watch", "server"),    
   )
 );

@@ -1,5 +1,34 @@
-section.section.say-me
-  .say-my__title Что обо мне говорят
-  .say-my__comments
-    ul.say-my__comment-item
-      li.comment
+-
+  var users = [
+    ['Ковальчук Дмитрий', 'Основатель Loftschool', 'Какой-то текст должен бытьКакой-то текст должен бытьКакой-то текст должен бытьКакой-то текст должен быть', 'review_photo1.jpg'],
+    ['Собанцев Владимир', 'преподователь', 'Какой-то текст должен быть наверноКакой-то текст должен бытьКакой-то текст должен бытьКакой-то текст должен быть?', 'review_photo1.jpg']
+  ] 
+
+section.section.say-my
+  .say-my__title
+    svg(class="say-my__title-img" width="100%" height="100%")
+    use(xlink:href='./images/icons/sprite.svg#about_header')
+    h1.say-my__title-text
+  .say-my__reviews
+    ul.say-my__reviews-item
+      each user, index in users
+        li.review__list
+          .review__list-desc
+            p #{user[2]}
+          .review__photo
+            img(src=`./images/content/${user[3]}`, alt="foto" class=`review__photo-img${index}`)
+          .review__user
+            .review__user-name #{user[0]}
+            .review__user-post #{user[1]}
+  .say-my__feedback
+    .feedback__title
+      img(src="", alt="background" class="feedback__img")
+    form.feedback__form
+      .feedback__form-blur
+        h1.feedback__form-title Cвязаться со мной
+        input(type="text", name="name" placeholder="Имя" class="form__input form__name")
+        input(type="email", name="email" placeholder="Email" class="form__input form__email")
+        textarea(name="your-message", cols="30", rows="10" class="form__input form__your-message" placeholder="Ваше сообщение")
+        .feedback__btn
+          button(type="submit" class="form__btn form__btn-submit") Отправить
+          button(type="reset" class="form__btn form__btn-reset") Очистить

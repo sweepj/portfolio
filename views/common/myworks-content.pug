@@ -1,22 +1,29 @@
 section.section.my-works
-  
-  .my-works__title  Мои работы
+  .triangle.triangle__fill_lightbeige.my-works__triangle
+    svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 50" preserveaspectratio="none" class="triangle-main")
+      polygon(class="left" points="0,0   0,86   500.8,86   500.8,75.5")
+      polygon(class="right" points="500,0   500,86   0,86   0,75.5")
+  .my-works__title
+    svg(class="my-works__title-img" width="100%" height="100%")
+      use(xlink:href='./images/icons/sprite.svg#works_header')
+    h1.my-works__title-text Мои работы
   .my-works__slaider
     .my-works__left
       .my-works__left-title Сайт школы онлайн образования
       .my-works__left-desc HTML, CSS, JAVASCRIPT
-      a(class="my-works__left-link" href="#")
-        .my-works__left-img
+      a(class="my-works__left-link main-btn" href="#")
+        span.my-works__left-img
           svg(class="my-works__left-icon" width="25" height="25")
-            user(xlink:href='images/icon/sprite.svg#link')
+            use(xlink:href='./images/icons/sprite.svg#link')
+        span.my-works__left-text Посмотреть сайт
     .my-works__right
       .my-works__right-slader
         .slader__main
-          img(src="#", alt="main slader")
+          img(src="./images/content/slider-img1.png", alt="main slader" class="slader__img slader__img-main")
         .slader__other
-          .slader__left
-            img(src="", alt="left slader")
-          .slader__right
-            img(src="", alt="right slader")
+          a(class="slader__left" href="#")
+            img(src="./images/content/slider-img2.png", alt="left slader" class="slader__img slader__img-left")
+          a(class="slader__right" href="#")
+            img(src="./images/content/slider-img3.png", alt="right slader" class="slader__img slader__img-right")
 
     
