@@ -1,5 +1,7 @@
 html, body{
   height: 100%;
+  font-family: roboto;
+  font-weight: regular;
 }
 
 a{
@@ -31,6 +33,12 @@ ul{
 }
 
 .maincontainer{
+  min-height: 100%;
+  height:auto!important;
+  overflow:hidden;
+}
+
+.maincontent{
   min-height: 100%;
   height:auto!important;
   overflow:hidden;

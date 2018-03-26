@@ -2,13 +2,14 @@ extends ../template
 
 block content
   .maincontent
-    header.header
-      include ../common/blog/blog-header
+    include ../common/blog/blog-header
     .article
-    
+    svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 50" preserveaspectratio="none" class="blog__triangle-main")
+      polygon(class="left" points="0,0   0,86   500.8,86   500.8,75.5")
+      polygon(class="right" points="500,0   500,86   0,86   0,75.5")
       .content   
         include ../common/blog/blog-sidebar
       
         include ../common/blog/blog-content
-  include ../common/footer
+  include ../common/blog/blog-footer
 

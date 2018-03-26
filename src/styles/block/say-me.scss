@@ -17,6 +17,18 @@
   align-items: center;
 }
 
+.my-works__title-text{
+  font-family: 'bernier_regular';
+  color: #455a64;
+  font-size: 63px;
+}
+
+.my-works__left-title{
+  font-family: 'bernier_regular';
+  color: #455a64;
+  font-size: 35px;
+}
+
 .my-works__slaider{
   display: flex;
   flex-direction: row;
@@ -207,15 +219,33 @@
   justify-content: flex-start;
 }
 
-.say-my__title{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .say-my__reviews-item{
   display: flex;
   flex-direction: row;
+}
+
+.say-my__title-text{
+  font-family: 'bernier_regular';
+  color: #455a64;
+  font-size: 63px;
+  
+}
+
+.say-my__title{
+  position:relative;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.say-my__title-img{
+  fill: rgba(#6d7070, .07);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .say-my__reviews{
