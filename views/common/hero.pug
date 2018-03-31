@@ -14,10 +14,10 @@ section.section.hero
         .user__data Личный сайт веб разработчика
     .hero__menu
       .hamburger-menu
-        a(href="#" class="hamburger-menu__link")
+        a(href="#" class="hamburger-menu__link" @click='changeClick')
           svg(class="hamburger-menu__icon" width="33" height="33")
             use(xlink:href="images/icons/sprite.svg#hamburger")
     .arrow-down.hero__scroll-btn
-      a(href="#" class="hero__scroll-link")
+      a(class="hero__scroll-link")
         svg(class="hero__scroll-icon" width="26" height="16")
           use(xlink:href="images/icons/sprite.svg#arrow_down")  

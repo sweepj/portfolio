@@ -1,0 +1,48 @@
+.parallax{
+  height: 100vh;
+  overflow:hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.parallax__layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.parallax__image{
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+}
+
+.parallax__image7{
+  width: 21%;
+  left: 84%;
+  height: 14%;
+  top: 0%;
+}
+
+.parallax__image4{
+  top: 7%;
+  height: 22%;
+  width: 33%;
+}
+
+.parallax__image1{
+  width: 56%;
+  height: 40%;
+  left: 30%;
+}
+
+.parallax__image10{
+  width: 100%;
+}

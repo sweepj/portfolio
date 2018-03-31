@@ -1,7 +1,6 @@
 html, body{
   height: 100%;
-  font-family: roboto;
-  font-weight: regular;
+  font-family: 'roboto-r';
 }
 
 a{
@@ -54,3 +53,23 @@ ul{
   height: 100vh;
 }
 
+.title, .subtitle{
+  &:after{
+    vertical-align: super;
+    content:'';
+    display:inline-block;
+    margin-left: 20px;
+    width: 23px;
+    height: 5px;
+    background: rgba(#455a64, 0.2);
+  }
+  &:before{
+    vertical-align: super;
+    content:'';
+    display:inline-block;
+    margin-right: 20px;
+    width: 23px;
+    height: 5px;
+    background: rgba(#455a64, 0.2);
+  }
+}

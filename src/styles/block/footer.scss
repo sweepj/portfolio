@@ -3,15 +3,16 @@
   flex-direction: column;
   height: 140px;
   margin-top: -140px;
+  flex: 1;
 }
 
 .footer__row{
   position: relative;
   height: 70px;
-  border-top: 1px solid #666c6e;
+  border-bottom: 1px solid #666c6e;
   background-color: rgba(#373e42, .85);
-  &:first-child{
-    border:none;
+  &:last-child{
+    border-bottom:none;
   }
 }
 

@@ -21,12 +21,14 @@ section.section.about
         polygon(class="left" points="0,0   0,86   500.8,86   500.8,75.5")
     .left-desc
       .about__left-title
-        .block-title Обо мне
+        svg(class="about__bg-title" width="100%" height="100%")
+          use(xlink:href='./images/icons/sprite.svg#about_header')
+        .block-title.title Обо мне
       .about__left-content
         .user-description
           .user-description__image
             img(src="images/content/user-full.jpg", alt="user_avatar" class="user-description__avatar")
-          .user-description__title Кто я
+          .user-description__title.title Кто я
           .user-description__text 
             p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
   .about__right
@@ -35,11 +37,9 @@ section.section.about
         polygon(class="right" points="500,0   500,86   0,86   0,75.5")
     .right-desc
       .about__right-title
-        .block-subtitle Чем я могу быть Вам полезен
+        .block-subtitle.subtitle.subtitle Чем я могу быть Вам полезен
       .about__right-text
         p Больше всего меня привекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
       .about__right-content
         each skill in work
           +mixin_skill('skills', 'skill', skill)
-          
-    

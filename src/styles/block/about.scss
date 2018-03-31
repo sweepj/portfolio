@@ -60,6 +60,35 @@
   margin-left: 10%;
 }
 
+.about__left-title{
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.about__bg-title{
+  top: 30%;
+  left: 50%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  fill: rgba(#6d7070, .07);
+}
+
+.block-title{
+  font-family: 'bernier_regular';
+  color: #455a64;
+  font-size: 63px;
+}
+
+.block-subtitle{
+  text-align: center;
+  font-family: 'bernier_regular';
+  color: #455a64;
+  font-size: 35px;
+}
+
 .about__right-text{
   margin-left: 5%;
 }
@@ -90,17 +119,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 33px;
 }
 
 .contacts__list{
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .contacts__icon{
   fill: #00bea4;
 }
 
+.contact__item{
+  margin-bottom: 15px;
+}
 .contacts__row{
   display: flex;
   flex-direction: row;
@@ -110,8 +142,37 @@
   margin-right: 10px;
 }
 
+.contacts__text{
+  font-family: 'roboto-m';
+  font-size: 16px;
+  color: #455a64;
+}
+
 .user-description{
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.user-description__title{
+  width: 100%;
+  text-align: center;
+  font-family: 'bernier_regular';
+  color: #455a64;
+  font-size: 35px;
+}
+
+.skills-row__title{
+  font-size: 28px;
+  font-family: 'roboto-m';
+  color: #455a64;
+  margin-bottom: 19px;
+  margin-top: 40px;
+}
+
+.skill__title{
+  font-size: 13px;
+  font-family: 'roboto-m';
+  color: #00bea4;
+  text-align: center;
 }
