@@ -1,0 +1,57 @@
+.overlay{
+  position: fixed;
+  background: #2e3133;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0%;
+}
+
+.overlay-visible{
+  visibility: visible;
+  height: 100%;
+  opacity: .98;
+}
+
+.overlay-menu__item{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-menu__list{
+  text-align: center;
+}
+
+.overlay-menu__link{
+  color: #fff;
+  font-family: 'bernier_regular';
+  font-size: 63px;
+}
+
+.body-active__menu{
+  overflow: hidden;
+}
+
+.overlay__btn-exit{
+  cursor: pointer;
+  top: 3%;
+  position:absolute;
+  left: 95%;
+  content:"";
+  background-color: #fff;
+  width: 5px;
+  height: 30px;
+  transform: rotate(45deg);
+  &:after{
+    transform: rotate(-90deg);
+    position:absolute;
+    background-color: #fff;
+    content:"";
+    width: 5px;
+    height: 30px;
+  }
+}

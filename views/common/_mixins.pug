@@ -6,11 +6,10 @@ mixin social(className, width, height, links, classActive)
           svg(class=`${className}__icon ` + ( (ndx === classActive) ? `${className}__icon_active` : '') width=`${width}` height=`${height}`)
             use(xlink:href=`images/icons/sprite.svg#${link}`)
 
-mixin sidebar(className, contents, classActive)
+mixin sidebar(className, contents)
   ul(class=`${className}__item`)
-    each content in contents
-      li(class=`${className}__list ` + ( (index === classActive) ? `${className}__list-active` : ''))
-        a(href="#" class=`${className}__content`)= content
+    each content, index in contents
+      li(class=`${className}__list`)= content
 
 mixin menulist(className, contents)
   nav(class=`${className}`)
