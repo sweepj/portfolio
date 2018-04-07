@@ -1,0 +1,117 @@
+.autoriz{
+  position: absolute;
+  left: 85%;
+  top: 5%;
+  
+}
+
+.autoriz__link{
+  padding: 12px 28px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "roboto-m";
+  font-size: 16px;
+  &:hover{
+    background: #fff;
+    color: $greenlight;
+  }
+}
+
+.welcome{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: 350px;
+}
+
+.welcome-user{
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: rgba(#fff, .8);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+.welcome-user__picture{
+  display: flex;
+  text-align:center;
+  overflow: hidden;
+  width: 147px;
+  height: 142px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.welcome-user__description{
+  text-align: center;
+}
+
+.welcome-user__name{
+  font-family: 'roboto-m';
+  font-size: 34px;
+  color: $greydark;
+}
+
+.welcome-user__data{
+  font-family: 'roboto-r';
+  font-size: 16px;
+  color: $grey;
+}
+
+
+
+.welcome-social__item{
+  display: inline-block;
+}
+
+.welcome-social{
+  margin-top: 40px;
+}
+
+.welcome-social__link{
+  fill: $greenlight;
+  &:hover{
+    fill: $greendark;
+  }
+}
+
+.welcome-btn__item{
+  display:flex;
+  flex-direction: row;
+}
+
+.welcome-btn__list{
+  background-color: $greenlight;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 44px;
+  opacity: .85;
+  &:hover{
+    background-color: $greendark;
+  }
+  &:first-child{
+    border-bottom-left-radius: 5px;
+  }
+
+  &:last-child{
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.welcome-btn__link{
+  font-family: 'roboto-m';
+  display: block;
+  color: #fff;
+}

@@ -1,26 +1,18 @@
 extends ../template
 
-block variables
-  - var title = "Добро пожаловать"
-
 block content
   .parallax
     - for (var i = 10; i > 0; i--)
         .parallax__layer
           img(src=`images/content/Layer ${i}.png`, alt="parallax" class=`parallax__image${i}`).parallax__image
-  //- main.log
-  //-   div.log-in
-  //-     h1.log-in__title Авторизация
-  //-     form.log-in__form
-  //-       .log-in__login
-  //-         //label.log-in__email-title(for="login" ) Логин
-  //-         input.log-in__email-input(name="login" id="login" placeholder="Логин")
-  //-       .log-in__password
-  //-         //label.log-in__password-title(for="password") password
-  //-         input.log-in__password-input(name="password" id="password" placeholder="Пароль")
-  //-       .log-in__capcha
-  //-         input.log-in__capcha-input(type="checkbox" name="capcha" id="capcha")
-  //-         label.log-in__capcha-title(for="capcha") Я человек
-  //-       .log-in__btn
-  //-         button.log-in__btn-main На главную
-  //-         button.log-in__btn-come Войти
+  .autoriz
+    a(href="#").autoriz__link Авторизация
+  .welcome
+    .welcome-user
+      .welcome-user__picture(style="background: url(../images/content/user.jpg)")
+        img(class=".welcome-user__picture-img" src="../images/content/user.jpg")
+      .welcome-user__description
+        .welcome-user__name Владимир Астахов
+        .welcome-user__data Личный сайт веб разработчика
+      +social("welcome-social", 34, 16, ["vk", "github", "in"], 2)
+    +menulist('welcome-btn',['Мои работы', "Обо мне", "Блог"])

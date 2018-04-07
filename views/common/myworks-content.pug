@@ -1,3 +1,5 @@
+- var images = ['slider-img1.png', 'slider-img2.png', 'slider-img3.png']
+
 section.section.my-works
   .triangle.triangle__fill_lightbeige.my-works__triangle
     svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 50" preserveaspectratio="none" class="triangle-main")
@@ -15,15 +17,25 @@ section.section.my-works
         span.my-works__left-img
           svg(class="my-works__left-icon" width="25" height="25")
             use(xlink:href='./images/icons/sprite.svg#link')
-        span.my-works__left-text.title Посмотреть сайт
+        span.my-works__left-text Посмотреть сайт
     .my-works__right
-      .my-works__right-slader
-        .slader__main
-          img(src="./images/content/slider-img1.png", alt="main slader" class="slader__img slader__img-main")
-        .slader__other
-          a(class="slader__left" href="#")
-            img(src="./images/content/slider-img2.png", alt="left slader" class="slader__img slader__img-left")
-          a(class="slader__right" href="#")
-            img(src="./images/content/slider-img3.png", alt="right slader" class="slader__img slader__img-right")
+      .my-works__right-slaider
+        .slaider__main
+          //ul.slaider__list
+          //  each image, index in images
+          //    li(class=`slaider__item ` + ((index === 0) ? `slaider__item-active` : ''))
+          //      img(src=`./images/content/${image}`, alt="left slaider" class="slaider__img slaider__img-left")
+          img(src="./images/content/slider-img1.png", alt="main slaider" class="slaider__img slaider__img-main")
+        .slaider__other
+          a(class="slaider__left")
+            ul.slaider__list
+              each image, index in images
+                li(class=`slaider__item ` + ((index === 0) ? `slaider__item-active` : ''))
+                  img(src=`./images/content/${image}`, alt="left slaider" class="slaider__img slaider__img-left")
+          a(class="slaider__right")
+            ul.slaider__list
+              each image, index in images
+                li(class=`slaider__item ` + ((index === 0) ? `slaider__item-active` : ''))
+                  img(src=`./images/content/${image}`, alt="left slaider" class="slaider__img slaider__img-left")
 
     

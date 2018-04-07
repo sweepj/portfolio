@@ -52,7 +52,7 @@
   background: #efebe0;
 }
 
-.my-works__right-slader{
+.my-works__right-slaider{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -60,26 +60,26 @@
   justify-content: flex-end;
 }
 
-.slader__img-main{
-  max-width: 100%;
+.slaider__img-main{
+  max-width: 80%;
   height: auto;
 }
 
-.slader__main{
+.slaider__main{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.slader__other{
+.slaider__other{
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 224px;
 }
 
-.slader__right{
+.slaider__right{
   position:relative;
   width: 50%;
   &:before{
@@ -108,51 +108,77 @@
   }
 }
 
-.slader__left{
+.slaider__left{
   position:relative;
   width: 50%;
-  &:before{
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(#888372, .5);
-    z-index: 10;
-  }
-  &:after{
-    content:"";
-    position: absolute;
-    top:50%;
-    left: 50%;
-    background-image: url('../images/content/portf_arrow_down.svg');
-    width: 45px;
-    height: 25px;
-    z-index: 20;
-    transform: translate(-50%, -50%);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    // &:before{
+    //   content:"";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   bottom: 0;
+    //   right: 0;
+    //   background-color: rgba(#888372, .5);
+    //   z-index: 10;
+    // }
+    // &:after{
+    //   content:"";
+    //   position: absolute;
+    //   top:50%;
+    //   left: 50%;
+    //   background-image: url('../images/content/portf_arrow_down.svg');
+    //   width: 45px;
+    //   height: 25px;
+    //   z-index: 20;
+    //   transform: translate(-50%, -50%);
+    //   background-position: center center;
+    //   background-size: cover;
+    //   background-repeat: no-repeat;
 
-  }
+  // }
 }
 
-.slader__img-left, .slader__img-right{
-  display: block;
-  max-width: 90%;
-  max-height: 100%;
+// .slaider__img-left, .slaider__img-right{
+//   display: block;
+//   max-width: 90%;
+//   max-height: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   margin: auto;
+// }
+
+
+.slaider__img{
+  width: 80%;
+  height: 100%;
+}
+
+.slaider__list{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slaider__item{
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  .slaider__item-active{
+    top: 0%;
+  }
+  
 }
+
 
 .triangle__fill_lightbeige{
   fill: #faf8f0;
 }
+
 .my-works__triangle{
   width: 100%;
 }
@@ -213,6 +239,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  min-height: 1200px;
 }
 
 .say-my__reviews-item{
@@ -261,8 +288,10 @@
   top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 440px;
+  width: 40%;
+  height: 50%;
+  max-width: 400px;
+  max-height: 450px;
 }
 
 .review__photo-img0, .review__photo-img1{
@@ -279,19 +308,18 @@
 }
 
 .say-my__background{
-  position: absolute;
-  top: 0;
+  position: absolute; 
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  min-width: 900px;
+  z-index: -10;
 }
 
 .feedback__form-blur{ 
   position: absolute;
   width: 100%; 
-  height: 100%;
+  height: 95%;
   background-image: url('../images/bg/myworks-bg.png');
   background-position: center center;
   background-repeat: no-repeat;
@@ -307,7 +335,6 @@
   align-items: center; 
  // background: rgba(#fff, .6);
   width: 100%;
-  height: 100%;
   position: absolute;
   z-index: 20;
 }
@@ -367,7 +394,7 @@
 }
 
 .form__input{
-  width: 90%;
+  width: 100%;
   margin-bottom: 20px;
   border: none;
   border-radius: 5px;
@@ -379,8 +406,18 @@
   }
 }
 
+.group{
+  width: 85%;
+  position: relative;
+}
+
 .form__name, .form__email{
   height: 40px;
+}
+
+.form__your-message{
+  height: 142px;
+  resize: none;
 }
 
 .feedback__form-title{
@@ -390,4 +427,24 @@
   font-size: 35px;
 }
 
+.error-block{
+  position: absolute;
+  background-color:#e44845;
+  color: #fff;
+  font-family: 'roboto-m';
+  font-size: 13px;
+  transition: .5s;
+}
 
+label.error{
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  transition: .1s;
+  background: #e44845;
+  padding: 5px;
+  color: #fff;
+  font-size: 10px;
+  border: 1px solid #e44845;
+  z-index: 10;
+}

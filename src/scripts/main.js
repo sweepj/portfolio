@@ -4,7 +4,9 @@ import activeSkill from './common/activeSkill';
 import parallax from './common/parallax';
 import scrollBlogMenu from './common/scrollMenu';
 import hamburgerButton from './common/hamburgerButton';
-import submitForm from './common/submitForm';
+//import ajaxWorks from './common/ajaxWorks';
+import validationForm from './common/validationForm';
+import slider from './common/slider';
 
 if(document.querySelector('.parallax')){
   parallax();
@@ -46,5 +48,5 @@ if($('.overlay').length > 0){
 }
 
 if($('.feedback__form').length > 0){
-  submitForm();
+  validationForm();
 }
